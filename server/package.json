@@ -2,17 +2,22 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "afaq",
-  "type": "commonjs",
   "main": "index.js",
-  "start": "node index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
-    "env": "^0.0.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
     "express": "^5.2.1",
     "mongoose": "^9.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
