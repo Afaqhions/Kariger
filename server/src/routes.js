@@ -12,10 +12,10 @@ router.post('/logout',logoutUser);
 router.get('/profile',getUserProfile);
 
 // Services Routes
-router.get('/services',getServices);
-router.post('/services',createService);
-router.put('/services/:id',updateService);
-router.delete('/services/:id',deleteService);
+router.get('/get_services',getServices);
+router.post('/create_services',createService);
+router.put('/update_services/:id',updateService);
+router.delete('/delete_services/:id',deleteService);
 
 // History Routes
 router.get('/history',getHistory);

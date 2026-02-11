@@ -7,7 +7,7 @@ const userProfileSchema = new mongoose.Schema({
     address : { type: String, required: true },
     city : { type: String, required: true },
     country : { type: String, required: true },
-    role: { type: String, enum: ['user', 'service-provider'], default: 'user' },
+    role: { type: String, enum: ['customer', 'service-provider'], default: 'customer' },
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
