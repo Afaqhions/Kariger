@@ -1,3 +1,3 @@
-exports.getHistory = async (req,res)=>{
+// exports.getHistory = async (req,res)=>{
 
-}
+// }
