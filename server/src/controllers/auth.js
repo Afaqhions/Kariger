@@ -1,5 +1,5 @@
 const User = require('../models/User');
-const UserProfile = require('../models/UserProfile');
+const UserProfile = require('../models/userprofile.js');
 
 exports.loginUser = async (req,res)=>{
     try{
@@ -51,7 +51,7 @@ exports.logoutUser = async (req,res)=>{
 
 exports.getUserProfile = async (req,res)=>{
     try {
-        const {email} = req.user;
+        const {email} = req.body;
         if(!email){
             return res.status(404).json({message:"User not found"});
         }

@@ -14,4 +14,5 @@ const userProfileSchema = new mongoose.Schema({
     description :{ type: String }
 });
 
-exports.UserProfile = mongoose.model('UserProfile', userProfileSchema);
+  const UserProfile = mongoose.model('UserProfile', userProfileSchema)
+  module.exports = UserProfile
