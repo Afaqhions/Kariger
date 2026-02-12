@@ -48,7 +48,7 @@ const RequestedServiceSchema = new Schema({
         ref: 'provided-services'
     },
     status:{
-        type: String, 
+        type: String,
         enum: ['requested', 'confirmed',"cancelled","completed"], 
         default: 'requested'
     },
