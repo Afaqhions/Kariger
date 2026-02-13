@@ -15,7 +15,7 @@ const ProvidedServiceSchema = new Schema({
         required:true
     },
     price:{
-        type: Decimal128,
+        type: Number,
         required:true
     },
     location:{
